@@ -52,7 +52,6 @@ body::before {
     position: relative;
 }
 
-
 .container__contenido {
     display: flex;
     align-items: center;
@@ -64,6 +63,7 @@ body::before {
     flex: 1;
     padding: 3rem;
 }
+
 
 .container__boton {
     border-radius: 16px;
@@ -106,6 +106,10 @@ body::before {
     gap: 2em;
 }
 
+.container__imagen-persona {
+    width: 30%;
+}
+
 h1 {
     font-family: var(--fuente-chakra-petch);
     /* font-size: 72px; */
@@ -124,8 +128,13 @@ button {
     font-weight: 400;
 }
 
+
 @media (max-width: 1200px ){
     .container__imagen-persona {
-        width: 30%;
+        width: 20%;
+    }
+    
+    .container__contenido {
+        flex-direction: column-reverse;
     }
 }
